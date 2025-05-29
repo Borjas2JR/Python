@@ -1,8 +1,8 @@
 print("Esta en una agenda para guardar o buscar numeros telefonicos")
 
 agenda = [
-    ["Ricardo", "Josselin", "Kelyn"],
-    ["632 878 849", "633 767 555", "681 614 860"]
+    ["Borjas", "Javi", "Kelyn"],
+    ["123 456 789", "112 334 445", "556 667 778"]
 ]
 
 def function_agendar(agenda):
