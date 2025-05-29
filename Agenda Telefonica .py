@@ -28,7 +28,7 @@ name = input("Que desea a hacer? b/buscar un contacto o g/guardar un contacto")
 if name == "b":
     function_buscar(agenda)
 elif name == "g":
-    function_agendar
+    function_agendar(agenda)
 else:
     print("Ingresa un valor correcto")
     
