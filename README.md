@@ -1,4 +1,4 @@
 Estoy empezando a aprender python. 
 
-En este espacio ire subiento scripts que valla realizando a medida voy aprendiendo.
+En este espacio ire subiento scripts básicos a medida que valla expandiendo mis conocimientos.
 
