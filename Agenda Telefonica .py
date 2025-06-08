@@ -1,34 +1,37 @@
 print("Esta en una agenda para guardar o buscar numeros telefonicos")
 
-agenda = [
-    ["Borjas", "Javi", "Kelyn"],
-    ["123 456 789", "112 334 445", "556 667 778"]
-]
+agenda = {
+    "Ricardo" : "632 123 123", 
+    "Josselin" : "633 123 123", 
+    "Kelyn" : "632 123 123"
+}
 
 def function_agendar(agenda):
-    entrada = input("Ingresa el nombre: ")
-    entrada2 = input("Ingresa el telefono:")
+    name = input("Ingresa el nombre: ")
+    number = input("Ingresa el telefono:")
 
-    if entrada != "":
-        if entrada2 != "":
-            agenda[0].append(entrada)
-            agenda[1].append(entrada2)
-
+    if name != "" and number != "":
+        agenda[name] = number
+    else: 
+        print("Ingrese un valor correcto" )
 def function_buscar(agenda):
     name1 = input("Que contacto deseas buscar?")
 
-    if name1 in agenda[0]:
-        index = agenda[0].index(name1)
-        telefono = agenda[1][index]
+    if name1 in agenda.keys():
+        print("El contacto es: ", name1, agenda[name1])
+    else:
+        print("El contacto no se encuentra agendado")
+        
 
-        print("El contacto es: ", name1, "Telefono: ", telefono )
+while True:
+    enter = input("Que desea a hacer? b/buscar un contacto o g/guardar un contacto: ")
 
-name = input("Que desea a hacer? b/buscar un contacto o g/guardar un contacto")
-
-if name == "b":
-    function_buscar(agenda)
-elif name == "g":
-    function_agendar(agenda)
-else:
-    print("Ingresa un valor correcto")
-    
+    if enter == "b":    
+        function_buscar(agenda)
+        break
+    elif enter == "g":
+        function_agendar(agenda)
+        break
+    else:
+        print("Ingresa un valor correcto")
+        continue
