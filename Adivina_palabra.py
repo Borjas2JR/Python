@@ -13,6 +13,7 @@ counter = 0
 
 while True: 
     letra = input("Ingresa una letra: ")      # Ingresar datos de usuario
+    letra = letra.lower()
     
     if len(letra) == 1 and letra.isalpha():      # Comprobar si el dato introducido contiene un solo caracter y es una letra
         if letra in palabra:                     # Comprobar si [letra] esta en [palabra]
